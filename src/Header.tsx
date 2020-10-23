@@ -6,7 +6,7 @@ const Header = () => {
         <header className="text-center mb-2">
             <h1 className="text-center">
                 <Tool />
-                CakePHPでbakeしたコードを形成するやつ
+                CakePHPでbakeしたコードを変換するやつ
                 <Tool />
             </h1>
         </header>
