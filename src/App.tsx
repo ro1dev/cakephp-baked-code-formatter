@@ -1,6 +1,16 @@
 import React, { useState, useRef } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Tool from './img/tool.png';
+import Footer from './Footer';
+
+function ToolImg() {
+  return <img
+            src={Tool}
+            alt="tool"
+            width={50}
+          />;
+};
 
 function App() {
   const placeHolderCode = `ここにペースト\n例:\n$validator\n\t->integer('id')\n\t->allowEmptyString('id', null, 'create');\n$validator\n\t->scalar('nickname')\n\t->maxLength('nickname', 255)\n\t->requirePresence('nickname', 'create')\n\t->notEmptyString('nickname')\n\t->add('nickname', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);`
@@ -30,26 +40,33 @@ function App() {
   }
 
   const toastForCopy = () => {
-    toast('copied');
+    toast('コピーしました');
   }
 
   return (
-    <div>
-      <h1>convert cakephp baked source code</h1>
+    <div className="container">
+      <h1 className="text-center">
+        <ToolImg />
+        CakePHPでbakeしたコードを形成するやつ
+        <ToolImg />
+      </h1>
       <ToastContainer />
       <div>
-        <textarea className="w-100" cols={10000} rows={10} value={bakedCode} placeholder={placeHolderCode} onChange={(e) => { setBakedCode(e.target.value) } }></textarea>
+        <textarea className="w-100" cols={10000} rows={15} value={bakedCode} placeholder={placeHolderCode} onChange={(e) => { setBakedCode(e.target.value) } }></textarea>
       </div>
-      <button className="btn btn-outline-primary" onClick={() => convertBakedCodeToBeEasy(bakedCode)}>
-        convert
-      </button>
-      <button className="btn btn-outline-danger" onClick={() => reset()}>reset</button>
-      <button className="btn btn-outline-success" onClick={copyToClipboard}>
-        copy
-      </button>
+      <div className="text-center">
+        <button className="btn btn-outline-primary py-3 px-5 rounded-pill m-2" onClick={() => convertBakedCodeToBeEasy(bakedCode)}>
+          convert
+        </button>
+        <button className="btn btn-outline-danger py-3 px-5 rounded-pill m-2" onClick={() => reset()}>reset</button>
+        <button className="btn btn-outline-success py-3 px-5 rounded-pill m-2" onClick={copyToClipboard}>
+          copy
+        </button>
+      </div>
       <div>
-        <textarea id="copy" ref={textAreaRef} className="w-100" cols={10} rows={10} value={convertedCode} ></textarea>
+        <textarea id="copy" ref={textAreaRef} className="w-100" cols={10} rows={15} value={convertedCode} ></textarea>
       </div>
+      <Footer />
     </div>
   );
 }
