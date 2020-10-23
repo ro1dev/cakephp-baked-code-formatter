@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -6,7 +6,6 @@ function App() {
   const placeHolderCode = `ここにペースト\n例:\n$validator\n\t->integer('id')\n\t->allowEmptyString('id', null, 'create');\n$validator\n\t->scalar('nickname')\n\t->maxLength('nickname', 255)\n\t->requirePresence('nickname', 'create')\n\t->notEmptyString('nickname')\n\t->add('nickname', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);`
   const [bakedCode, setBakedCode] = useState<string>('');
   const [convertedCode, setConvertedCode] = useState<string>('');
-  const [copySuccess, setCopySuccess] = useState('');
   const textAreaRef = useRef<any>();
 
 // 変換
@@ -16,16 +15,11 @@ function App() {
     setConvertedCode(result);
   }
 
-  useEffect(() => {
-    console.log(bakedCode);
-  }, []);
-
   function copyToClipboard(e: any) {
     if (textAreaRef.current) {
       textAreaRef.current!.select();
       document.execCommand('copy');
       e.target.focus();
-      setCopySuccess('Copied!'); 
       toastForCopy();
     }
   }
