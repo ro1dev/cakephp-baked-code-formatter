@@ -1,7 +1,4 @@
-import React, { useState, useRef } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import Tool from './img/tool.png';
+import React from 'react';
 
 const Footer = () => {
     return <React.Fragment>
