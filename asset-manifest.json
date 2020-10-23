@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.js": "/static/js/main.f344e34e.chunk.js",
-    "main.js.map": "/static/js/main.f344e34e.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.bbfbc7da.js",
-    "runtime-main.js.map": "/static/js/runtime-main.bbfbc7da.js.map",
-    "static/css/2.d34346ea.chunk.css": "/static/css/2.d34346ea.chunk.css",
-    "static/js/2.e2d9ccc8.chunk.js": "/static/js/2.e2d9ccc8.chunk.js",
-    "static/js/2.e2d9ccc8.chunk.js.map": "/static/js/2.e2d9ccc8.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.723b3c4eb064d0a16e31b6e0c68b1b40.js": "/precache-manifest.723b3c4eb064d0a16e31b6e0c68b1b40.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.d34346ea.chunk.css.map": "/static/css/2.d34346ea.chunk.css.map",
-    "static/js/2.e2d9ccc8.chunk.js.LICENSE.txt": "/static/js/2.e2d9ccc8.chunk.js.LICENSE.txt"
+    "main.js": "/cakephp-baked-code-formatter/static/js/main.a9648b6d.chunk.js",
+    "main.js.map": "/cakephp-baked-code-formatter/static/js/main.a9648b6d.chunk.js.map",
+    "runtime-main.js": "/cakephp-baked-code-formatter/static/js/runtime-main.083dc364.js",
+    "runtime-main.js.map": "/cakephp-baked-code-formatter/static/js/runtime-main.083dc364.js.map",
+    "static/css/2.d34346ea.chunk.css": "/cakephp-baked-code-formatter/static/css/2.d34346ea.chunk.css",
+    "static/js/2.e2d9ccc8.chunk.js": "/cakephp-baked-code-formatter/static/js/2.e2d9ccc8.chunk.js",
+    "static/js/2.e2d9ccc8.chunk.js.map": "/cakephp-baked-code-formatter/static/js/2.e2d9ccc8.chunk.js.map",
+    "index.html": "/cakephp-baked-code-formatter/index.html",
+    "precache-manifest.9aef6e2f511ab48a38f64660cff36524.js": "/cakephp-baked-code-formatter/precache-manifest.9aef6e2f511ab48a38f64660cff36524.js",
+    "service-worker.js": "/cakephp-baked-code-formatter/service-worker.js",
+    "static/css/2.d34346ea.chunk.css.map": "/cakephp-baked-code-formatter/static/css/2.d34346ea.chunk.css.map",
+    "static/js/2.e2d9ccc8.chunk.js.LICENSE.txt": "/cakephp-baked-code-formatter/static/js/2.e2d9ccc8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.bbfbc7da.js",
+    "static/js/runtime-main.083dc364.js",
     "static/css/2.d34346ea.chunk.css",
     "static/js/2.e2d9ccc8.chunk.js",
-    "static/js/main.f344e34e.chunk.js"
+    "static/js/main.a9648b6d.chunk.js"
   ]
 }
