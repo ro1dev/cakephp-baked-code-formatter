@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7100cd1d857989a68d31af95a44294b7",
+    "revision": "b8d8b74772a4008322c8045e456ae780",
     "url": "/cakephp-baked-code-formatter/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cakephp-baked-code-formatter/static/js/2.1f16b5b2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c852d936c9123440ad9b",
-    "url": "/cakephp-baked-code-formatter/static/js/main.509d3c6f.chunk.js"
+    "revision": "2e7f75c673f55ba08ee5",
+    "url": "/cakephp-baked-code-formatter/static/js/main.e8526979.chunk.js"
   },
   {
     "revision": "7dad6939b25789aa43a1",

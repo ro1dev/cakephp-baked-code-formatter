@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/cakephp-baked-code-formatter/static/js/main.509d3c6f.chunk.js",
-    "main.js.map": "/cakephp-baked-code-formatter/static/js/main.509d3c6f.chunk.js.map",
+    "main.js": "/cakephp-baked-code-formatter/static/js/main.e8526979.chunk.js",
+    "main.js.map": "/cakephp-baked-code-formatter/static/js/main.e8526979.chunk.js.map",
     "runtime-main.js": "/cakephp-baked-code-formatter/static/js/runtime-main.083dc364.js",
     "runtime-main.js.map": "/cakephp-baked-code-formatter/static/js/runtime-main.083dc364.js.map",
     "static/css/2.d34346ea.chunk.css": "/cakephp-baked-code-formatter/static/css/2.d34346ea.chunk.css",
     "static/js/2.1f16b5b2.chunk.js": "/cakephp-baked-code-formatter/static/js/2.1f16b5b2.chunk.js",
     "static/js/2.1f16b5b2.chunk.js.map": "/cakephp-baked-code-formatter/static/js/2.1f16b5b2.chunk.js.map",
     "index.html": "/cakephp-baked-code-formatter/index.html",
-    "precache-manifest.14afa7e943c0a99fc1dc0d89ea6373f0.js": "/cakephp-baked-code-formatter/precache-manifest.14afa7e943c0a99fc1dc0d89ea6373f0.js",
+    "precache-manifest.2247e3b29343dabc7bc168131ff3a74c.js": "/cakephp-baked-code-formatter/precache-manifest.2247e3b29343dabc7bc168131ff3a74c.js",
     "service-worker.js": "/cakephp-baked-code-formatter/service-worker.js",
     "static/css/2.d34346ea.chunk.css.map": "/cakephp-baked-code-formatter/static/css/2.d34346ea.chunk.css.map",
     "static/js/2.1f16b5b2.chunk.js.LICENSE.txt": "/cakephp-baked-code-formatter/static/js/2.1f16b5b2.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.083dc364.js",
     "static/css/2.d34346ea.chunk.css",
     "static/js/2.1f16b5b2.chunk.js",
-    "static/js/main.509d3c6f.chunk.js"
+    "static/js/main.e8526979.chunk.js"
   ]
 }

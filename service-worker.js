@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/cakephp-baked-code-formatter/precache-manifest.14afa7e943c0a99fc1dc0d89ea6373f0.js"
+  "/cakephp-baked-code-formatter/precache-manifest.2247e3b29343dabc7bc168131ff3a74c.js"
 );
 
 self.addEventListener('message', (event) => {
