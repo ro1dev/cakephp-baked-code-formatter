@@ -1,4 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const placeHolderCode = `ここにペースト\n例:\n$validator\n\t->integer('id')\n\t->allowEmptyString('id', null, 'create');\n$validator\n\t->scalar('nickname')\n\t->maxLength('nickname', 255)\n\t->requirePresence('nickname', 'create')\n\t->notEmptyString('nickname')\n\t->add('nickname', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);`
@@ -24,6 +26,7 @@ function App() {
       document.execCommand('copy');
       e.target.focus();
       setCopySuccess('Copied!'); 
+      toastForCopy();
     }
   }
 
@@ -32,9 +35,14 @@ function App() {
     setConvertedCode('');
   }
 
+  const toastForCopy = () => {
+    toast('copied');
+  }
+
   return (
     <div>
       <h1>convert cakephp baked source code</h1>
+      <ToastContainer />
       <div>
         <textarea className="w-100" cols={10000} rows={10} value={bakedCode} placeholder={placeHolderCode} onChange={(e) => { setBakedCode(e.target.value) } }></textarea>
       </div>
