@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { copyFile } from 'fs';
-// import axios from "axios";
+import React, { useEffect, useState, useRef } from 'react';
 
 function App() {
   const placeHolderCode = `ここにペースト\n例:\n$validator\n\t->integer('id')\n\t->allowEmptyString('id', null, 'create');\n$validator\n\t->scalar('nickname')\n\t->maxLength('nickname', 255)\n\t->requirePresence('nickname', 'create')\n\t->notEmptyString('nickname')\n\t->add('nickname', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);`
   const [bakedCode, setBakedCode] = useState<string>('');
   const [convertedCode, setConvertedCode] = useState<string>('');
+  const [copySuccess, setCopySuccess] = useState('');
+  const textAreaRef = useRef<any>();
 
 // 変換
   const convertBakedCodeToBeEasy = (code: string) => {
@@ -18,13 +18,19 @@ function App() {
     console.log(bakedCode);
   }, []);
 
-  // function copy() {
-  //   const textarea: HTMLElement | null = window.document.getElementById('target')!;
-  //   if (textarea != null) {
-  //     textarea!.onselect();
-  //     document.execCommand("copy");
-  //   }
-  // }
+  function copyToClipboard(e: any) {
+    if (textAreaRef.current) {
+      textAreaRef.current!.select();
+      document.execCommand('copy');
+      e.target.focus();
+      setCopySuccess('Copied!'); 
+    }
+  }
+
+  const reset = () => {
+    setBakedCode('');
+    setConvertedCode('');
+  }
 
   return (
     <div>
@@ -35,11 +41,12 @@ function App() {
       <button className="btn btn-outline-primary" onClick={() => convertBakedCodeToBeEasy(bakedCode)}>
         convert
       </button>
-      {/* <button className="btn btn-outline-success" onClick={() => copy()}>
+      <button className="btn btn-outline-danger" onClick={() => reset()}>reset</button>
+      <button className="btn btn-outline-success" onClick={copyToClipboard}>
         copy
-      </button> */}
+      </button>
       <div>
-        <textarea id="target" className="w-100" cols={10} rows={10} value={convertedCode} ></textarea>
+        <textarea id="copy" ref={textAreaRef} className="w-100" cols={10} rows={10} value={convertedCode} ></textarea>
       </div>
     </div>
   );
